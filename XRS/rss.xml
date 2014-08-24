@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<?xml-stylesheet type="text/xsl" href="rss_style.xsl"?>
+<rss version="2.0">
+<channel>
+<title>Default Releases</title>
+<link>http://127.0.0.1/Xylitol-Release-System/</link>
+<description>Latest Default Releases</description>
+<copyright> Trap&#039;s Team 2009</copyright>
+<language>fr</language>
+<image>
+<title> Default Releases</title>
+<url>http://127.0.0.1/Xylitol-Release-System/design/rss.png</url>
+<link>http://127.0.0.1/Xylitol-Release-System/</link>
+</image>
+<pubDate>Wed, 09 Sep 2009 22:24:41 +0100</pubDate>
+</channel>
+</rss>
