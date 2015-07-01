@@ -1,3 +1,5 @@
+![RED](https://cloud.githubusercontent.com/assets/8536299/8459060/ec2c483c-201a-11e5-8f31-8fa11f64b43c.png)
+
 Xylitol.Release.System.Final.v1.0.6.Tool-RED
 ============================================
 
