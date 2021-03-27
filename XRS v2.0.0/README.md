@@ -34,5 +34,3 @@ Changlog compared to v1:
     [+] API For release packers *beta*
 
 For how to customize it see: [customizing.nfo](customizing.nfo)
-
-To update from v1 to v2 please see: [Updating from 1.x.nfo](Updating from 1.x.nfo)
