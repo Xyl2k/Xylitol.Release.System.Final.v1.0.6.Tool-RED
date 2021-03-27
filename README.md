@@ -12,19 +12,22 @@ Final version 2.0.0
 
 Features:
 
-    Installer and Uninstaller (easy install, easy  uninstall)
+    Installer and Uninstaller (easy install, easy uninstall)
     About Editer (With HTML allowed)
     Anti-Bug System (Write a .log  file if an hacker tried something hostile)
-	Token system against csrf when logged in.
+    Token system against csrf when logged in.
     Releases Adder/deletor/editor (Using AJAX technology)
     Search engine (Search a release or an author on your database)
-	API for developpers to link your release packer to XRS (beta)
-	List with pagination
+    API for developpers to link your release packer to XRS (beta)
+    List with pagination
 
 Requirements for v2:
-	MySQL v5.6.5 or superior
-	PHP v7.1 or superior
+
+    MySQL v5.6.5 or superior
+    PHP v7.1 or superior
+	
 	
 Requirements for v1 (use this only if you can't PHP 7, otherwise take XRS v2):
-	MySQL v5.1.36 or superior
-	PHP v5.3.0 or superior
+
+    MySQL v5.1.36 or superior
+    PHP v5.3.0 or superior
