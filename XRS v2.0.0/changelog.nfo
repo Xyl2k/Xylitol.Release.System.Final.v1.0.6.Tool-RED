@@ -1,0 +1,25 @@
+Versions history
+----------------
+v2.0.0:
+[!] fixed a bug on the embedded installer
+[!] fixed a bug on delete release
+[!] fixed a bug on the pagination when a cracker is selected
+[!] fixed rss feed validity
+[!] fixed a stylesheet bug
+[-] removed severals unused variables/artifacts.
+[+] huge code rewrite and made improvements
+[+] mysqli updated to PDO
+[+] changed the code of page loading for a whitelist system
+[+] API For release packers *beta*
+
+
+v1.0.7 [01.04.2018]
+[+]  Retrofitting for PHP 7.1 (mysqli)
+
+
+v1.0.6 [06.01.2010]
+[+] code rewrite and made improvements
+
+
+v1.0.5 [23.12.2009]
+Public release

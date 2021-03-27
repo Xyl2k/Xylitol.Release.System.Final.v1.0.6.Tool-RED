@@ -1,0 +1,20 @@
+<?php
+
+defined('CORE') or defined('CORE_ACP') or exit;
+
+define('CONFIG', true);
+
+$config['team'] = '%TEAM%';
+$config['pass'] = '%PASS%';
+$config['accro'] = '%ACCRO%';
+
+$config['path'] = '%PATH%';
+
+$config['cracksparpage'] = 20;
+
+$dbhost = '%DB_HOST%';
+$dbuser = '%DB_USER%';
+$dbpass = '%DB_PASS%';
+$dbname = '%DB_NAME%';
+
+$db_link = new PDO('mysql:host=' . $dbhost . ';dbname=' . $dbname, $dbuser, $dbpass);

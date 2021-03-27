@@ -1,0 +1,172 @@
+-[ FiLE iNFOS ]------------------------------------------------------------------
+Title: A note to system operators while upgrading XRS from 1.0.6 and inferiors.
+Author: Xylitol - xylitol@temari.fr
+Date: 01 JULY 2018
+---------------------------------------------------------------------------------
+
+
+-[ SUMMARY ]---------------------------------------------------------------------
+     0x01: Prerequisites
+     0x02: releases table Migration
+     0x03: XRS 2.0.0 installation
+     0x04: XRS 2.0.0 config file
+     0x05: Now ready !
+---------------------------------------------------------------------------------
+
+
+---[ 0x01: Prerequisites ] 
+
+This guide is intended for thoses who want to migrate from old 1.x to 2.x version
+of XRS.
+
+MySQL:
+XRS have choosen to replace the epoch timestamp stored in the mySQL DB to
+DATETIME.
+This is 1000 times better if we need query dates in the future or if you need to.
+For example: SELECT * FROM releases WHERE EXTRACT(YEAR FROM date) = 2018;
+
+But this result an incompatibility with previous versions of XRS.
+And due to the usage of DATETIME with CURRENT_TIMESTAMP you will need minimum
+MySQL version 5.6.5 or superior, see the MySQL 5.6 manual for more info:
+https://dev.mysql.com/doc/refman/5.6/en/timestamp-initialization.html
+
+You can check wich version of DBMS you have by querying: SELECT @@version;
+If you are running inferior version then consider to update your MySQL or MariaDB
+otherwise you wouldn't be able to create the tables.
+There is several workaround like by getting back to epoch or creating trigger on
+your DB, but we won't help you doing that:
+If we updated the code to latest technologies it's not to get back on our step so
+just update your DBMS if you lack features.
+
+Apache:
+You may have see contrary to 1.x the new 2.x include also an .htaccess file.
+this file is mendatory, so if you use nginx you can delete it, but if you use
+apache i would recommand to upload it as well.
+
+PHP:
+As of XRS 2.0.0 you will need minimum PHP 7.1.x to be able to use it.
+As told earlier in this doc, XRS as been rewritten a lot to use the latest
+stable web technologies, and anyway previous vers of php sucks compared to 7.1
+
+The ideal config:
+XRS 2.0.0 has been developed under PHP 7.1.9, MySQL 5.7.19 And Apache 2.4.27
+
+
+
+---[ 0x02: releases table Migration ]
+
+
+So first things to do is to BACKUP your 'releases' table.
+Export your old DB just in case event turn wrong but everything should be fine.
+
+Then run these queries on the DB where XRS is installed:
+
+------------------[CODE BEGIN HERE]--------------------------
+ALTER TABLE releases
+  ADD COLUMN new_date DATETIME NOT NULL DEFAULT Now() after date;
+
+UPDATE releases
+SET    new_date = From_unixtime(date);
+
+ALTER TABLE releases
+  DROP COLUMN date;
+
+ALTER TABLE releases
+  CHANGE new_date date DATETIME NOT NULL DEFAULT Now();
+------------------[CODE STOP HERE]--------------------------
+
+If everything turn good then all good, your db is now ready for XRS 2.0
+I there is a problem check if your MySQL version allow you to use DATETIME.
+For info anout previous SQL snippet: CURRENT_TIMESTAMP(), CURRENT_TIMESTAMP
+is a synonym for NOW() 
+
+
+
+
+---[ 0x03: XRS installation ] 
+
+
+Now that the change are made on your XRS table, erase completely the files of
+the 1.x version from your FTP where did you installed it (or move your old
+files to a backup folder)
+Then drop the files of XRS 2.0.0 on your FTP where you want to see it.
+
+
+
+---[ 0x04: XRS 2.0 Config file ] 
+
+
+As we migrate to new from old we can't use the traditional embedded installer
+as this one is designed for an install from scratch (without an old base).
+You need to manually create the config file: config.php
+Place it at the root folder where XRS is installed and then write it with this:
+
+
+
+------------------[CODE BEGIN HERE]--------------------------
+<?php
+
+defined('CORE') or defined('CORE_ACP') or exit;
+
+define('CONFIG', true);
+
+$config['team'] = 'Reverse Engineers Dream';
+$config['pass'] = '0ZC901PngF9c7mEv';
+$config['accro'] = 'RED';
+
+$config['path'] = 'http://localhost/xrs2/';
+
+$config['cracksparpage'] = 20;
+
+$dbhost = 'localhost';
+$dbuser = 'root';
+$dbpass = '';
+$dbname = 'xrs';
+
+$db_link = new PDO('mysql:host=' . $dbhost . ';dbname=' . $dbname, $dbuser, $dbpass);
+------------------[CODE STOP HERE]--------------------------
+
+Notice that there is no php end tag on the new config file, this is on purpose.
+don't add it and modify the infos accordingly to your settings.
+
+
+
+
+for reference here is what look like a dummy 1.0.6 config:
+
+------------------[CODE BEGIN HERE]--------------------------
+<?php
+
+define("CONFIG", true);
+
+$config['team'] = 'Reverse Engineers Dream';
+$config['pass'] = '0ZC901PngF9c7mEv';
+$config['accro'] = 'RED';
+
+$config['path'] = 'http://localhost/xrs1/';
+
+$config['cracksparpage'] = 20;
+
+$dbhost = 'localhost';
+$dbuser = 'root';
+$dbpass = '';
+$dbname = 'red';
+
+mysql_connect('localhost', 'root', '');
+mysql_select_db('red');
+
+?>
+------------------[CODE STOP HERE]--------------------------
+
+
+
+---[ 0x05: Now ready ! ] 
+
+At this step XRS 2.0.0 should be in a working mode and fully operational.
+if it throw you php errors, mySQL error, 50x server error codes...
+then check again that you meet prerequisites, and looks for potential disabled
+function on your php settings, that could cause trouble.
+or read/write permission problem etc..
+
+
+#EOF

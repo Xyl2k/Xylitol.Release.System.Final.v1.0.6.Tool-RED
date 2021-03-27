@@ -1,0 +1,193 @@
+                                      /\
+                                     //\\
+                                    //  \\
+                                 //// /\ \\\\ 
+                             //////\/\\//\/\\\\\\
+                          //////// /  \/  \ \\\\\\\\    
+                         _________/ /\  /\ \_________
+                    /\  /___ ______/  \/  \______ ___\  /\
+                   //\\//  //      /\    /\      \\  \\//\\  
+                  //  \/ _//       \ \  / /       \\_ \/  \\
+                 //     __ \_____/\ \ \/ / /\_____/ __     \\
+                / \____/ /__    ___\ \  / /___    __\ \____/ \
+                \__________ \  /  / \ \/ / \  \  / __________/
+                          / / / _ \ //\/\\ / _ \ \ \
+                         / / /_//_///\  /\\\_\\_\ \ \
+         /\             /  \ \\___// /\/\ \\___// /  \             /\
+        / /            / __ \/ \ _/\/ /\ \/\_ / \/ __ \            \ \
+       / / /\         / ///\ \__\\  \ \/ /  //__/ /\\\ \         /\ \ \
+      / / /  \       / /// /\____ \ / /\ \ / ____/\ \\\ \       /  \ \ \
+     / / /   /      /  \\\ \____ \ \\//\\// / ____/ ///  \      \   \ \ \
+     \/ /    \      \   \\\__   \ \ \/  \/ / /   __///   /      /    \ \/ 
+        \  __/      /    \\_ \__/\ \_    _/ /\__/ _//    \      \__  /
+         \ \_____ _/      \ \____/  / /\ \  \____/ /      \_ _____/ /
+          \                \    ___/ /  \ \___    /                /
+           \_____ __ ______/   /   _/    \_   \   \______ __ _____/
+                // //    \__  /   \__ /\ __/   \  __/    \\ \\ 
+               // //      _/ /      //  \\      \ \_      \\ \\  
+              // //      /  /______// /\ \\______\  \      \\ \\
+  ___________//__\\_____/           \/  \/           \_____//__\\__________
+  |    ____               \\                _//_     ________             |_
+  |    |__/               //                \_ |     |       |              |
+  |                      //                ___||     |_______|              |
+  |                  ___//                /    |                            |
+  |                  \__/                /_____|                           _|
+  |_______/\_______________                        _______________________|
+           __________  ___ \                      / ___  __________
+           \  _____  \/  / /          /\          \ \  \/  _____  /
+           /  \    \     \/          /  \          \/     /    /  \
+           \  /     \    /   ______ / /\ \ ______   \    /     \  /
+          /\\//\     \__ \  /     // //\\ \\     \  / __/     /\\//\
+        /\\ \/  \       \ \/     // ///\\\ \\     \/ /       /  \/ //\
+        \ \\  /\ \__     \__/\  / \ \\/\// / \  /\__/     __/ /\  // /
+         \ \\/  \__ \______   \//\ \ \/\/ / /\\/   ______/ __/  \// /
+          \/       \_ _//_ \ \ \\ \ \    / / // / / _\\_ _/       \/
+                     \\ \_\ \__ \\ \ \/\/ / // __/ /_/ //
+    __________________\\__\\_  \ \\ \ /\ / // /  _//__//_________________
+   / _____________________   \  \ \\//  \\// /  /   ____________________ \
+   \/                     \__ \  \ \/ /\ \/ /  / __/                    \/
+   /                         \ \     /  \     / /                        \
+   \_          ______________/  \___/    \___/  \_____________          _/
+   / \________/                                               \________/ \
+   \  ________                  RELEASE iNFOS                  ________  /
+   /\/        \_______________________________________________/        \/\
+  /                                                                       \
+  
+    
+             RED CREW PROUDLY PRESENTS ANOTHER FiNE RELEASE CALLED
+
+
+                        Xylitol Release System v2.0.0
+   
+    CRACKED BY...........: TEAM RED
+    PROTECTiON...........: n/a
+    OPERATiNG SYSTEM.....: Anything with PHP 7.1 and MySQL 5.6.5
+    WEBSiTE..............: http://xylireleasesystem.free.fr/site/
+    RELEASE DATE.........: 01/07/2o18
+    RELEASE TYPE.........: OTHER
+
+
+   \_          _______________________________________________          _/
+   / \________/                                               \________/ \
+   \  ________                   DESCRiPTiON                   ________  /
+   /\/        \_______________________________________________/        \/\
+  /                                                                       \
+
+   Wow wow wow, a new XRS version is out !
+   As requested by a fellow member of the scene, who totally made revived
+   this project. Web standards has evolved a lot since our last XRS release
+   in 2009. Yes, that was already 9 years ago.
+
+   A lot of code rewrite had to be made as everything was obsolete.
+   
+   The v2.0 is now ready for recent web servers equipped with PHP 7.
+   You will need at least also MiNiMUM MySQL v5.6.5 or superior.
+
+   If you are still running on the old version and that you meet theses
+   prerequisites considere updating it right now with this release.
+
+
+
+   If you need to migrate 1.x to 2.0.0 please read the included file:
+   - Updating from 1.x.nfo
+   
+   See changelog.nfo for version infos.
+   See customizing.nfo for modifying the design and project itself.
+   
+   
+
+   Bugs report are welcome: xylitol@temari.fr
+   Altought it was internaly tested and also beta-tested by a release 
+   group (you know who you are!)
+
+
+
+
+Special note:
+
+   We celebrate also our 10 years this month so have a look on our cracktro
+   It was inspired fron CRUDE 2008, and the raster bars are a recode from a
+   javascript raster bar effect by Stefan Pettersson, also coded in 2008.
+   http://www.stpe.se/javascript/rasterbar.php 
+   OpenGL powered.
+
+
+   \_          _______________________________________________          _/
+   / \________/                                               \________/ \
+   \  ________                  iNSTALLATiONS                  ________  /
+   /\/        \_______________________________________________/        \/\
+  /                                                                       \
+    
+    [1] Unzip all
+    [2] Copy the folder XRS to your server
+    [3] Go to install/install.php
+    [3] N-j0y another fine release from RED CREW :)
+
+    [!] For any bugs or problem contact us.
+
+
+   \_          _______________________________________________          _/
+   / \________/                                               \________/ \
+   \  ________                    TEAM NEWS                    ________  /
+   /\/        \_______________________________________________/        \/\
+  /                                                                       \
+
+
+  
+              CELEBRATING 10 YEARS !
+
+
+
+   \_          _______________________________________________          _/
+   / \________/                                               \________/ \
+   \  ________                     CONTACTS                    ________  /
+   /\/        \_______________________________________________/        \/\
+  /                                                                       \
+
+    EMAiL ...............: N/A
+    SiTE ................: N/A
+    FORUM ...............: N/A
+    DiSTRO ..............: https://distro.webscene.ir/RED
+    IRC .................: N/A
+
+      We are a closed group, if we need you then we will contact you!
+
+   \_          _______________________________________________          _/
+   / \________/                                               \________/ \
+   \  ________                    GREETiNGS                    ________  /
+   /\/        \_______________________________________________/        \/\
+  /                                                                       \
+                                                           
+      Greetz goes to: AT4RE, SND, CiM, FFF, URET, TSRh, OMB, DARKSiDERS
+                       And all who keep the scene alive.
+ __                                                                       __
+/_/\                                                                     /\_\
+\_\/                                                                     \/_/
+  \_________                                                     _________/
+           _\ REVERSE ENGINEER'S DREAM-MAERD S'REENIGNE ESREVER /_
+           \______________                        _______________/
+          __________  ___ \                      / ___  __________
+          \  _____  \/  / /          /\          \ \  \/  _____  /
+          /  \    \     \/          /  \          \/     /    /  \
+          \  /     \    /   ______ / /\ \ ______   \    /     \  /
+         /\\//\     \__ \  /     // //\\ \\     \  / __/     /\\//\
+       /\\ \/  \       \ \/     // ///\\\ \\     \/ /       /  \/ //\
+       \ \\  /\ \__     \__/\  / \ \\/\// / \  /\__/     __/ /\  // /
+        \ \\/  \__ \______   \//\ \ \/\/ / /\\/   ______/ __/  \// /
+         \/       \_ _//_ \ \ \\ \ \    / / // / / _\\_ _/       \/
+                    \\ \_\ \__ \\ \ \/\/ / // __/ /_/ //  Xsp!d3r
+                    _\\__\\_  \ \\ \ /\ / // /  _//__//_ 
+                    \____   \  \ \\//  \\// /  /   ____/
+                         \__ \  \ \/ /\ \/ /  / __/
+                            \ \  \  //\\  /  / /
+                             \ \_ \//  \\/ _/ /  
+                             //\ \_/ /\ \_/ /\\
+                            _\\ \ \_//\\_/ / //_
+                           / _\\/ /_/\/\_\ \//_ \
+                           \ \ \  /_\  /_\  / / /
+                            \ \ \ \_//\\_/ / / /
+                             \_\ \/ \\// \/ /_/
+                              \__/\ /\/\ /\__/
+                                 \_\\  //_/
+                                    \\//
+                                     \/

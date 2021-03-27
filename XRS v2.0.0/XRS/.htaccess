@@ -1,0 +1,4 @@
+<FilesMatch "logs.txt">
+	Order Allow,Deny
+	Deny from all
+</FilesMatch>
